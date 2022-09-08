@@ -20,6 +20,13 @@ At the root of the folder where the VagrantFile is located, in a terminal or con
 
 ## Use
 
+After installation, at the root of the folder where the VagrantFile is located, in a terminal or console, run `vagrant ssh` to connect to the guest.
+Run the following commands to start the NodeJS server: 
+```shell
+vagrant@bullseye:~$ cd /var/www/AdvancedNodeStarter && npm run dev
+```
+> **Make sure you have changed the information found in the ***/var/www/AdvancedNodeStarter/config/dev.js*** file in the guest beforehand (*see the course*).**
+
 From the host, open a browser and go to http://localhost:8080.
 > **You can change port 8080 to whatever you want at this line:**
 >>`config.vm.network "forwarded_port", guest: 3000, host: `***8080***` `
